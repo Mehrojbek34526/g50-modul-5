@@ -155,7 +155,7 @@ public class EmployeeGenerateTest {
 
         for (int i = 0; i < count; i++) {
 
-            long time = date.birthday(17, 35).getTime();
+            long time = date.birthday(17, 22).getTime();
 
             LocalDate birthDate = new Date(time).toLocalDate();
 
