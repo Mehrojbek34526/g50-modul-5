@@ -17,6 +17,8 @@ public class DBTest {
             String username = annotation.username();
             String password = annotation.password();
             System.out.printf("url: %s, username: %s, password: %s\n", url, username, password);
+        } else {
+            System.out.println("No annotation found");
         }
 
         //1. private field qiymatini o'zgartirish
