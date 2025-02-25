@@ -3,6 +3,7 @@ package uz.pdp.lesson8;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.LoginUrl;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
@@ -30,6 +31,7 @@ public class MyTelegramBot extends TelegramLongPollingBot {
             InlineKeyboardButton shareButton = new InlineKeyboardButton();
             shareButton.setText("📢 Share Bot");
             shareButton.setSwitchInlineQuery("Check out this bot! @YourBotUsername");
+//            shareButton.setLoginUrl(new LoginUrl("https://kun.uz"));
 
             // Add button to the keyboard
             List<InlineKeyboardButton> row = new ArrayList<>();
