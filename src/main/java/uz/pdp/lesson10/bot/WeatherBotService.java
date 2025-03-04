@@ -167,7 +167,6 @@ public class WeatherBotService extends TelegramLongPollingBot {
 
     private String makeOneDayWeatherText(ForecastDayDTO forecastDay) {
 
-
         return """
                 🌅 Quyosh chiqishi: %s
                 
